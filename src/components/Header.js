@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 //this is a react stateless function
 const Header = props => (
@@ -18,5 +19,9 @@ const Header = props => (
     </header>
   </React.Fragment>
 );
+
+Header.propTypes = {
+  tagline: PropTypes.string.isRequired
+};
 
 export default Header;
