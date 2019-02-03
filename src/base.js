@@ -2,9 +2,9 @@ import Rebase from "re-base";
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyB6fJ46TO0d7PZdzmqGFgX7tTFdp1KBmno",
-  authDomain: "catch-of-the-day-robin-demo.firebaseapp.com",
-  databaseURL: "https://catch-of-the-day-robin-demo.firebaseio.com"
+  apiKey: API_KEY,
+  authDomain: DOMAIN_FIREBASE_URL,
+  databaseURL: Database_URL
 });
 
 const base = Rebase.createClass(firebaseApp.database());
